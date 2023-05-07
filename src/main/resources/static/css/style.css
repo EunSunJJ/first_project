@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* 레이아웃 + incloud */
+/* #wrap{height:595px; background-color:pink;} */
+header{height:80px; background-color:skyblue;}
+nav{height:60px; background-color:orange;}
+section{height:620px; background-color:pink;}
+footer{height:50px; background-color:green;}
+
+.situation{margin-left:800px;}
+.nav-item{margin:10px;}
+.copyright{font-size:13px; font-weight:bold; padding:15px;}
+
+/* 회원가입 */
+.signUpTitle{font-size:40px; margin-left:250px;}
+.signUpBox{margin-top:10px; margin-left:200px;}
+.form-group{margin-left:400px;}
+#signUpBtn1{margin-left:400px; width:330px;}
+
+/* 로그인 */
+.signInTitle{font-size:40px; margin-left:250px;}
+.signInBox{margin-top:10px; margin-left:200px;}
+.form-group{margin-left:400px;}
+#signInBtn1{margin-left:400px; width:330px;}
+
+.buttonBox{margin-left: 370px; margin-top:15px;}
+#signUpBtn2{margin-right:30px;}
+#searchIdBtn1{margin-right:30px; margin-right:30px;}
+
+/* 아이디 찾기 */
+#searchIdBtn2{padding:7px 50px; margin-left:700px;}
+
+/* 비밀번호 찾기 */
+#searchPwBtn2{padding:7px 50px; margin-left:700px;}
+
+/* 비밀번호 찾기 성공*/
+.successPw{margin-left:400px;}
+.successPwCk{margin-left:400px;}
+#signInBtn3{margin-left:600px;}

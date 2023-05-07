@@ -1,4 +1,4 @@
-package com.first_project.test.model;
+package com.first_project.user.model;
 
 import java.util.Date;
 
