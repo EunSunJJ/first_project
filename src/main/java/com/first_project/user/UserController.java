@@ -1,14 +1,22 @@
 package com.first_project.user;
 
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.first_project.user.bo.UserBO;
+
 @RequestMapping("/user")
 @Controller
 public class UserController {
-
+	
+	@Autowired
+	private UserBO userBO;
+	
 	// 회원가입
 	@GetMapping("/sign-up-view")
 	// http://localhost/user/sign-up-view
@@ -26,7 +34,16 @@ public class UserController {
 	}
 
 	// 로그아웃
-
+	@RequestMapping("/sign-out")
+	public String signOut(HttpSession session) {
+		// 세션에 있는 모든 걸 비운다
+		session.removeAttribute("userId");
+		session.removeAttribute("userName");
+		session.removeAttribute("userLoginId");
+		// 화면이동
+		return "redirect:/start-page";
+	}
+	
 	// 아이디 찾기
 	@GetMapping("/search-id-view")
 	// http://localhost/user/search-id-view

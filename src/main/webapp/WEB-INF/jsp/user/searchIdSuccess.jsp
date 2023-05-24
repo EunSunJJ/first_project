@@ -5,9 +5,8 @@
 	<div class="d-flex justify-content-center">
 		<div class="mt-5 mb-3"><h1>아이디 찾기</h1></div>
 	</div>
-	
 	<div class="d-flex justify-content-center mb-4">
-		<div><h3>회원가입 시 사용한 아이디는 (EL문법) 입니다</h3></div>
+		<div class="successIdBox">회원가입 시 사용한 아이디는 <b></b> 입니다</div>
 	</div>
 	
 	<div class="d-flex justify-content-center">

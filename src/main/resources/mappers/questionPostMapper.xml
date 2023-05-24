@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.first_project.post.dao.QuestionPostMapper">
+ <select id="selectQuestionPostList" resultType="com.first_project.post.model.QuestionPost">
+ 	SELECT
+ 		`id`
+		, `userId`
+		, `subject`
+		, `content`
+		, `imagePath`
+		, `secretPost`
+		, `password`
+		, `createdAt`
+		, `updatedAt`
+ 	FROM
+ 		`question_post`
+ 	ORDER BY `id` DESC
+ </select>
+ 
+ <insert id="insertQuestionPost" parameterType="map">
+ 	INSERT INTO `question_post`
+ 	(
+		`userId`
+		, `subject`
+		, `content`
+		, `imagePath`
+		, `secretPost`
+		, `password`
+		, `createdAt`
+		, `updatedAt`
+ 	)
+ 	VALUES
+ 	(
+ 		#{userId}
+ 		, #{subject}
+ 		, #{content}
+ 		, #{imagePath}
+ 		, #{secretPost}
+ 		, #{password}
+ 		, NOW()
+ 		, NOW()
+ 	)
+ </insert>
+ </mapper>

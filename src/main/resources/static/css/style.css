@@ -1,20 +1,26 @@
 @charset "UTF-8";
+/* 글씨체 */
+
+/* font-family: 'Poor Story' */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 /* 레이아웃 + incloud */
 /* #wrap{height:595px; background-color:pink;} */
 header{height:80px; background-color:skyblue;}
 nav{height:60px; background-color:orange;}
-section{height:620px; background-color:pink;}
+section{height:800px; background-color:pink;}
 footer{height:50px; background-color:green;}
 
-.situation{margin-left:800px;}
-.nav-item{margin:10px;}
+.afterLogin{margin-left:600px;}
+.beforeLogin{margin-left:700px;}
+.nav-item{font-size:25px;}
 .copyright{font-size:13px; font-weight:bold; padding:15px;}
 
 /* 회원가입 */
 .signUpTitle{font-size:40px; margin-left:250px;}
 .signUpBox{margin-top:10px; margin-left:200px;}
-.form-group{margin-left:400px;}
+.form-group{margin-left:400px; margin-top:15px;}
+.ckBox{margin-left:410px;}
 #signUpBtn1{margin-left:400px; width:330px;}
 
 /* 로그인 */
@@ -30,10 +36,29 @@ footer{height:50px; background-color:green;}
 /* 아이디 찾기 */
 #searchIdBtn2{padding:7px 50px; margin-left:700px;}
 
+/* 아이디 찾기 성공 */
+.successIdBox{font-size:30px;}
+
 /* 비밀번호 찾기 */
 #searchPwBtn2{padding:7px 50px; margin-left:700px;}
 
-/* 비밀번호 찾기 성공*/
+/* 비밀번호 찾기 성공 */
 .successPw{margin-left:400px;}
 .successPwCk{margin-left:400px;}
 #signInBtn3{margin-left:600px;}
+
+/* 메인화면 */
+.mainHead{margin-top:25px; margin-bottom:10px; font-size:35px; font-family: 'Poor Story';}
+.info{color:black;}
+
+/* 질문게시판 리스트 */
+.questionLogo{font-size:45px; margin-left:50px; margin-bottom:10px;}
+#questionBtn{margin-left:1100px; margin-top:20px;}
+
+/* 질문게시판 글쓰기 */
+#content{width: 100%; height: 250px; border: none; resize: none;}
+.secretBox{margin-left:330px; margin-top:15px;}
+.password{margin-left:325px; margin-top:3px;}
+.box{margin-left:690px;}
+.addFile{margin-left:325px; margin-top:15px;}
+/* 질문게시판 수정&삭제 */
